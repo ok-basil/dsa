@@ -1,0 +1,2 @@
+Big O
+- Theoretical definition of the complexity of an algorithm as a function of the size.
