@@ -1,0 +1,14 @@
+Binary
+A byte = 256 bits
+
+ASCII
+- Used to represent alphabets and some symbols
+
+Unicode
+- Is a sort of superset of ASCII
+
+Algorithms
+- Step by step instructions for solving a problem
+
+Abstraction
+- Hiding implementation details. Focusing on what it does or what it's called.

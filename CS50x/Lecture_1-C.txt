@@ -1,0 +1,10 @@
+C
+-  #include<stdio.h> at the top of your program is referred to as the header file.
+- stdio.h is a library
+
+Format codes
+%s - string
+%i - integer
+%f - float
+%c - character
+%li - long integer

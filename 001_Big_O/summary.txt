@@ -1,2 +1,5 @@
 Big O
 - Theoretical definition of the complexity of an algorithm as a function of the size.
+
+- Space complexity is a measure of working storage or extra storage is needed as a particular algorithm grows.
+(Read more: Tail call optimization)
