@@ -4,7 +4,19 @@ C
 
 Format codes
 %s - string
-%i - integer
+%i - integer 
 %f - float
 %c - character
 %li - long integer
+
+Integer overflow
+- Integer data type is not big enough to hold the value. This essentially happens when there isn't enough memory to store the value.
+
+Truncation
+- Happens when integers are used to carry out operations that should be done with floats.
+
+Type Casting
+- Casting is the process of converting one data type to another.
+
+Floating-point imprecision
+- The difference between the actual value and the value stored in the computer's memory is known as floating-point imprecision. This is a result of not being able to represent every possible value with a finite number of bits.
