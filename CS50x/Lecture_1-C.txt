@@ -20,3 +20,10 @@ Type Casting
 
 Floating-point imprecision
 - The difference between the actual value and the value stored in the computer's memory is known as floating-point imprecision. This is a result of not being able to represent every possible value with a finite number of bits.
+
+Compiling
+- Compiling is the process of converting code written in a programming language into a format that can be executed by a computer. It's an amalgamation of four main steps.
+- Preprocessing
+- Compiling
+- Asssembling
+- Linking
