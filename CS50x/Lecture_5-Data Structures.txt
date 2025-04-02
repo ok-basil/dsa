@@ -1,0 +1,27 @@
+Data Structures
+- A data structure is a way of storing and organizing data in a computer so that it can be easily accessed and manipulated.
+Particularly in C, it's a way of using your computer's memory to solve problems in effective and interesting ways.
+
+Abstract Data Types
+Queues
+ - FIFO (First In First Out)
+ enqeueue
+ dequeue
+Stacks
+ - LIFO (Last In First Out)
+ push
+ pop
+
+Linked Lists
+- A linked list is a collection of nodes that are connected to one another. Each node contains a value and a pointer to the next node.
+Assuming there's a node struct with a value and a pointer to the next node:
+typedef struct node {
+    int value;
+    struct node *next;
+} node
+
+node *n = malloc(sizeof(node)); // allocate memory for a node
+(*n).number = 42; // access the value field of the node
+The above can also be written as 
+n -> number = 42;
+n -> next = NULL;
