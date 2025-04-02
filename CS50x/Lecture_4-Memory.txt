@@ -1,0 +1,18 @@
+Memory
+- 8 bits make up a byte.
+- A hexadecimal number is a base 16 number system. 0 1 2 3 4 5 6 7 8 9 A B C D E F
+- 0x is used to prefix hexadecimals
+
+A pointer is a variable that stores the address of another variable.
+int n = 50;
+int *p = &n; (p is the pointer variable, n is the variable it points to)
+
+File I/O
+
+fopen
+fclose
+fprintf
+fscanf
+fread
+fwrite
+fseek

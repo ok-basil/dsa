@@ -1,5 +1,5 @@
 Binary
-A byte = 256 bits
+A byte = 8 bits
 
 ASCII
 - Used to represent alphabets and some symbols

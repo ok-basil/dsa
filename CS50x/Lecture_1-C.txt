@@ -23,7 +23,9 @@ Floating-point imprecision
 
 Compiling
 - Compiling is the process of converting code written in a programming language into a format that can be executed by a computer. It's an amalgamation of four main steps.
-- Preprocessing
-- Compiling
-- Asssembling
-- Linking
+- Preprocessing: converts the called libraries at the top into their equivalents
+- Compiling: converts the source code into assembly code
+- Asssembling: converts the assembly code into machine code
+- Linking: links the various separate files (the libraries and source code) together and then creates an executable file.
+
+NUL is the zero byte that represents the end of a string.

@@ -1,0 +1,2 @@
+Arrays
+- a chunk of memory storing values back to back.

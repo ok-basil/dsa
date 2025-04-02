@@ -1,0 +1,19 @@
+Algorithms
+
+Linear Search
+Binary Search
+
+Running time is a measure of the efficiency of an algorithm.
+Big O Notation
+- measures the efficiency of an algorithm in the worst case scenario (upper bound).
+
+Omega
+- measures the best case scenario (lower bound).
+
+Recursion
+- A function that calls itself.
+
+Merge sort
+- divide and conquer. Divide the list in half, sort each half, and then merge the two halves together.
+
+The difference between selection sort and bubble sort is that selection sort picks the smallest element and places it at the beginning of the list while bubble sort goes through the entire list and places the largest element at the end.
