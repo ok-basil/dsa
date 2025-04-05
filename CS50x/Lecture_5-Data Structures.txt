@@ -1,5 +1,6 @@
 Data Structures
-- A data structure is a way of storing and organizing data in a computer so that it can be easily accessed and manipulated.
+- A data structure is a way of storing and organizing data in a computer so that it can be easily accessed 
+and manipulated.
 Particularly in C, it's a way of using your computer's memory to solve problems in effective and interesting ways.
 
 Abstract Data Types
@@ -13,7 +14,8 @@ Stacks
  pop
 
 Linked Lists
-- A linked list is a collection of nodes that are connected to one another. Each node contains a value and a pointer to the next node.
+- A linked list is a collection of nodes that are connected to one another. Each node contains a value 
+and a pointer to the next node.
 Assuming there's a node struct with a value and a pointer to the next node:
 typedef struct node {
     int value;
@@ -31,3 +33,17 @@ Trees
 
 Dictionaries
 - A dictionary is a collection of key-value pairs. Each key is unique and maps to a value.
+
+Hashing and Hash Tables
+- Hashing is the process of mapping keys to values using a function. A hash table is a data structure that 
+uses hashing to store key-value pairs.
+
+What is a Hash Table?
+- Considering a contacts app on a phone where the keys are names and the values are phone numbers, 
+a hash table can be used to store the name as the key and the phone number as the value.
+An array can be used to hold each letter of the alphabet.When the occasion rises where there are 
+multiple contacts with similar names (for example, names that start with the same letter), 
+those can be stored using linked lists. A hash table as implemented above would be an array of linked lists.
+
+Tries
+- A tree of arrays.
