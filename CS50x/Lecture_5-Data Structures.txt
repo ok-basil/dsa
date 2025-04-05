@@ -25,3 +25,5 @@ node *n = malloc(sizeof(node)); // allocate memory for a node
 The above can also be written as 
 n -> number = 42;
 n -> next = NULL;
+
+Trees
