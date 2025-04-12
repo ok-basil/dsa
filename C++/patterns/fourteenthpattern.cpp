@@ -6,7 +6,7 @@ void pattern(int n);
 int main()
 {
     int n;
-    cout << "Give me a number: ";
+    cout << "Enter a number: ";
     cin >> n;
     pattern(n);
     return 0;
@@ -14,13 +14,11 @@ int main()
 
 void pattern(int n)
 {
-    for (int i = 1; i <= (2*n - 1); i++)
+    for (int i = 0; i < n; i++)
     {
-        int stars = i;
-        if (i > n) stars = 2*n - i;
-        for (int j = 1; j < stars; j++)
+        for (char j = 'E' - i; j <= 'E'; j++)
         {
-            cout << "*";
+            cout << j << " ";
         }
         cout << endl;
     }
