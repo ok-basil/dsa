@@ -12,11 +12,16 @@ using namespace std;
 
 int main()
 {
-    vector<int> v;
-    v.push_back(1);
-    v.emplace_back(2);
+    vector<int> v = {1, 2, 3, 4, 5};
 
-    cout << v[0] << endl;
-    cout << v[1] << endl;
+    vector<int>::iterator it = v.begin();
+
+    vector<int>::iterator it2 = v.end();
+
+    it2--;
+
+    cout << *it << endl;
+
+    cout << *it2 << endl;
     return 0;
 }
