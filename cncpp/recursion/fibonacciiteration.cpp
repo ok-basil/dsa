@@ -9,4 +9,12 @@ int fib(int n)
         t0 = t1;
         t1 = s;
     }
+    return t1;
+}
+
+int main(void)
+{
+    int result;
+    result = fib(5);
+    printf("%d \n", result);
 }
