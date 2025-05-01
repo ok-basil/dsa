@@ -10,13 +10,22 @@ int fact(int n)
     }
 }
 
-int nCr(int n, int r)
+int ncr(int n, int r)
 {
     int num, den;
 
     num = fact(n);
     den = fact(r) * fact(n-r);
     return num/den;
+}
+
+int nCr(int n, int r)
+{
+    if (n == r || r == 0)
+    {
+        return 1;
+    }
+    return nCr(n-1, r-1) + nCr(n-1, r);
 }
 
 int main(void)
