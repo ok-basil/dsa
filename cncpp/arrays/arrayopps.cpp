@@ -43,10 +43,10 @@ void insert(struct Array *arr, int index, int x)
     }
 }
 
-void delete(struct Array *arr, int index)
+void deleteElement(struct Array *arr, int index)
 {
     int i;
-    if (index <= arr->length){
+    if (arr->length > 0 && index >= 0 && index < arr->length){
         for (i = index; i < arr->length - 1; i++)
         {
             arr->A[i] = arr->A[i+1];
@@ -61,7 +61,7 @@ int main(void)
      
 //    insert(&arr, 3, 40);
 //    append(&arr, 10);
-    delete(&arr, 2);
+    deleteElement(&arr, 2);
     display(arr);
     
     return 0;
