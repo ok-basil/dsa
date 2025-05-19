@@ -61,7 +61,7 @@ int main(void)
      
 //    insert(&arr, 3, 40);
 //    append(&arr, 10);
-    deleteElement(&arr, 2);
+    // deleteElement(&arr, 2);
     display(arr);
     
     return 0;
