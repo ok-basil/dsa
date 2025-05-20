@@ -1,10 +1,3 @@
-//
-//  main.c
-//  cpractice
-//
-//  Created by Basil on 25/01/2025.
-//
-
 #include <stdio.h>
 #include <stdlib.h>
 
