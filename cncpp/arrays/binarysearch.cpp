@@ -28,6 +28,29 @@ int BinarySearch(struct Array arr, int key)
             l = mid + 1;
         }
     }    
+    return -1;
+}
+
+int RecursiveBinarySearch(int a[], int l, int h, int key)
+{
+    int mid;
+    
+    if(l <=h )
+    {
+        mid = (l+h)/2;
+        if (key==a[mid])
+        {
+            return mid;
+        }
+        else if (key<a[mid])
+        {
+            return RecursiveBinarySearch(a, l, mid-1, key);
+        }
+        else {
+            return RecursiveBinarySearch(a, mid+1, h, key);
+        }
+    }
+    return -1;
 }
 
 int main(void)
