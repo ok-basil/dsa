@@ -55,6 +55,28 @@ int MaxValue(struct Array arr)
     return max;
 }
 
+int MinValue(struct Array arr)
+{
+    if (arr.length == 0)
+    {
+        return -1;
+    }
+
+    int min, l, i;
+    l = arr.length;
+    i = 0;
+    min = arr.A[0];
+
+    for (i = 0; i < l; i++)
+    {
+        if (min > arr.A[i])
+        {
+            min = arr.A[i];
+        }
+    }
+    return min;
+}
+
 void DisplayArr(struct Array arr)
 {
     int i = 0;
