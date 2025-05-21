@@ -76,6 +76,25 @@ int MinValue(struct Array arr)
     }
     return min;
 }
+int sumOfArray(struct Array arr)
+{
+    int sum = 0;
+    for (int i = 0; i < arr.length; i++)
+    {
+        sum = sum + arr.A[i];
+    }
+    return sum;
+}
+
+int Average(struct Array arr)
+{
+    int sum = 0;
+    for (int i = 0; i < arr.length; i++)
+    {
+        sum = sum + arr.A[i];
+    }
+    return sum/arr.length;
+}
 
 void DisplayArr(struct Array arr)
 {
