@@ -86,6 +86,53 @@ int sumOfArray(struct Array arr)
     return sum;
 }
 
+void ReverseArray(struct Array *arr)
+{
+    int len = arr->length - 1;
+    
+    for (int i = 0; i < len; i++, len-- )
+    {
+        int temp = arr->A[len];
+        arr->A[len] = arr->A[i];
+        arr->A[i] = temp;
+    }
+    
+    printf("The reversed array is: ");
+    
+    for (int i = 0; i < arr->length; i++)
+    {
+        printf("%d ", arr->A[i]);
+    }
+    printf("\n");
+}
+
+void ReverseArray2(struct Array *arr)
+{
+    int *B;
+    int i, j;
+    
+    B = (int *)malloc(arr->length*sizeof(int));
+    for (i = arr->length - 1, j = 0; i >= 0; i--, j++)
+    {
+        B[j] = arr->A[i];
+    }
+    
+    for (i = 0; i < arr->length; i++)
+    {
+        arr->A[i] = B[i];
+    }
+    
+    free(B);
+    
+    printf("The reversed array is: ");
+    
+    for (i = 0; i < arr->length; i++)
+    {
+        printf("%d ", arr->A[i]);
+    }
+    printf("\n");
+}
+
 int Average(struct Array arr)
 {
     int sum = 0;
@@ -93,7 +140,7 @@ int Average(struct Array arr)
     {
         sum = sum + arr.A[i];
     }
-    return sum/arr.length;
+    return (float) sum/arr.length;
 }
 
 void DisplayArr(struct Array arr)
