@@ -158,6 +158,19 @@ void InsertSort(struct Array *arr, int x)
     arr->length++;
 }
 
+// Sorted in ascending order
+void IsArraySorted(struct Array arr)
+{
+    for (int i = 0; i < arr.length - 1; i++)
+    {
+        if (arr.A[i + 1] < arr.A[i])
+        {
+            printf("Not sorted");
+        }
+    }
+    printf("Sorted in ascending order! \n");
+}
+
 void DisplayArr(struct Array arr)
 {
     int i = 0;
