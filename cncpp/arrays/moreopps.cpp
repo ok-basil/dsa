@@ -224,7 +224,30 @@ struct Array* UnionArray(struct Array *a1, struct Array *a2)
         a3->A[k++] = a2->A[j];
     a3->size = a1->length + a2->length;
     a3->length = k;
-    
+
+    return a3;
+}
+
+struct Array* ArrayIntersection(struct Array *a1, struct Array *a2)
+{
+    int i = 0, j = 0, k = 0;
+    struct Array *a3 = (struct Array *)malloc(sizeof(struct Array));
+
+    while ( i < a1->length && j < a2->length )
+    {
+        if (a1->A[i] < a2->A[j])
+            i++;
+        else if (a1->A[i] > a2->A[j])
+            j++;
+        else 
+        {
+            a3->A[k++] = a1->A[i++];
+            j++;
+        }
+    }
+    a3->size = a1->length + a2->length;
+    a3->length = k;
+
     return a3;
 }
 
