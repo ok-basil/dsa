@@ -197,6 +197,37 @@ struct Array* MergeArray(struct Array *a1, struct Array *a2)
     return a3;
 }
 
+struct Array* UnionArray(struct Array *a1, struct Array *a2)
+{
+    int i = 0, j = 0, k = 0;
+    struct Array *a3 = (struct Array *)malloc(sizeof(struct Array));
+
+    while ( i < a1->length && j < a2->length )
+    {
+        if (a1->A[i] < a2->A[j])
+        {
+            a3->A[k++] = a1->A[i++];
+        }
+        else if (a1->A[i] > a2->A[j])
+        {
+            a3->A[k++] = a2->A[j++];
+        }
+        else 
+        {
+            a3->A[k++] = a1->A[i++];
+            j++;
+        }
+    }
+    for (; i < a1->length; i++)
+        a3->A[k++] = a1->A[i];
+    for (; j < a2->length; j++)
+        a3->A[k++] = a2->A[j];
+    a3->size = a1->length + a2->length;
+    a3->length = k;
+    
+    return a3;
+}
+
 void DisplayArr(struct Array arr)
 {
     int i = 0;
