@@ -26,13 +26,13 @@ class Array
 
         ~Array()
         {
-            delelte []A;
+            delete []A;
         }
 
         void Display();
         void Insert(int index, int x);
         int Delete(int index);
-}
+};
 
 void Array::Display()
 {
