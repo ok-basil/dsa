@@ -1,4 +1,6 @@
 #include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
 
 using namespace std;
 
@@ -22,7 +24,7 @@ int Max(struct Array arr);
 int Min(struct Array arr);
 int Sum(struct Array arr);
 int RecursiveSum(struct Array arr);
-int TailRecursiveSum(struct Array arr, int n, int acc)
+int TailRecursiveSum(struct Array arr, int n, int acc);
 float Avg(struct Array arr);
 void Reverse(struct Array *arr);
 void Reverse2(struct Array *arr);
