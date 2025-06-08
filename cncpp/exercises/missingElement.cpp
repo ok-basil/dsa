@@ -56,6 +56,23 @@ int FindMissing2(struct Array arr, int l, int h)
     return 0;
 
 }
+
+int FindDuplicates(struct Array arr)
+{
+    int lastDuplicate = 0;
+
+    for (i = 0; i < arr.length - 1; i++)
+    {
+        if (arr.A[i] == arr.A[i + 1] && arr.A[i] != lastDuplicate)
+        {
+            printf("%d ", arr.A[i]);
+            lastDuplicate = arr.A[i];
+        }
+    }
+    return 0;
+}
+
+
 int main()
 {
     struct Array arr;
