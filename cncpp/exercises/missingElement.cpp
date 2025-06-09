@@ -96,7 +96,7 @@ void FindDuplicates3(struct Array arr, int l, int h)
 {
     int *H = (int *)malloc((h + 1) * sizeof(int));
 
-    for (int i = 0; i < h; i++)
+    for (int i = 0; i <= h; i++)
     {
         H[i] = 0;
     }
@@ -111,9 +111,10 @@ void FindDuplicates3(struct Array arr, int l, int h)
         if (H[i] > 1)
             printf("%d is appearing %d times \n", i, H[i]);
     }
+    printf("The special thing you're looking for is %d", H[30]);
+    printf("\n");
 
     free(H);
-    return 0;
 }
 
 
@@ -133,7 +134,8 @@ int main(void)
         scanf("%d", &arr.A[i]);
     }
     // FindMissing(arr);
-    FindDuplicates2(arr);
+    // FindDuplicates2(arr);
+    FindDuplicates3(arr, 1, 30);
     printf("\n");
     
     return 0;
