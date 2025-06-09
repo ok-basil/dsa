@@ -25,6 +25,7 @@ int FindMissing(struct Array arr)
     return 0;
 }
 
+// Using Hashing
 int FindMissing2(struct Array arr, int l, int h)
 {
     int n = arr.length;
@@ -42,7 +43,7 @@ int FindMissing2(struct Array arr, int l, int h)
     }
 
     printf("Missing elements are: ");
-    for (int l = 1; i <= h; i++)
+    for (int i = 1; i <= h; i++)
     {
         if (B[i] == 0)
         {
@@ -56,11 +57,12 @@ int FindMissing2(struct Array arr, int l, int h)
     return 0;
 }
 
+// This function prints the number of times a single element is repeated
 int FindDuplicates(struct Array arr)
 {
     int lastDuplicate = 0;
 
-    for (i = 0; i < arr.length - 1; i++)
+    for (int i = 0; i < arr.length - 1; i++)
     {
         if (arr.A[i] == arr.A[i + 1] && arr.A[i] != lastDuplicate)
         {
@@ -71,7 +73,8 @@ int FindDuplicates(struct Array arr)
     return 0;
 }
 
-int FindDuplicates2(struct Array arr)
+// This function counts the number of times mutliple elements are repeated
+void FindDuplicates2(struct Array arr)
 {
     for (int i = 0; i < arr.length - 1; i++)
     {
@@ -88,8 +91,14 @@ int FindDuplicates2(struct Array arr)
     }
 }
 
+// Using Hashing
+void FindDuplicates3(struct Array arr)
+{
 
-int main()
+}
+
+
+int main(void)
 {
     struct Array arr;
 
@@ -104,7 +113,8 @@ int main()
     for (int i = 0; i < arr.length; i++){
         scanf("%d", &arr.A[i]);
     }
-    FindMissing(arr);
+    // FindMissing(arr);
+    FindDuplicates2(arr);
     printf("\n");
     
     return 0;
