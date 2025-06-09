@@ -54,7 +54,6 @@ int FindMissing2(struct Array arr, int l, int h)
     free(B);
 
     return 0;
-
 }
 
 int FindDuplicates(struct Array arr)
@@ -70,6 +69,23 @@ int FindDuplicates(struct Array arr)
         }
     }
     return 0;
+}
+
+int FindDuplicates2(struct Array arr)
+{
+    for (int i = 0; i < arr.length - 1; i++)
+    {
+        if (arr.A[i] == arr.A[i + 1])
+        {
+            int j = i + 1;
+            while (arr.A[j] == arr.A[i])
+            {
+                j++;
+            }
+            printf("%d is appearing %d times\n", arr.A[i], j - i);
+            i = j - 1;
+        }
+    }
 }
 
 
@@ -92,6 +108,4 @@ int main()
     printf("\n");
     
     return 0;
-
-
 }
