@@ -117,6 +117,29 @@ void FindDuplicates3(struct Array arr, int l, int h)
     free(H);
 }
 
+// This functions finds duplicates in an unsorted array
+void FindDuplicates4(struct Array arr)
+{
+    for (int i = 0; i < arr.length - 1; i++)
+    {
+        int count = 1;
+        if (arr.A[i] != -1)
+        {
+            for (int j = i + 1; j < arr.length; j++)
+            {
+                if (arr.A[i] == arr.A[j])
+                {
+                    count++;
+                    arr.A[j] = -1;
+                }
+            }
+            if (count > 1)
+            {
+                printf("%d is appearing %d times\n", arr.A[i], count);
+            }
+        }
+    }
+}
 
 int main(void)
 {
