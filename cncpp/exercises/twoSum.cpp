@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+// Brute Force Approach
 int* twoSum (int* nums, int numsSize, int target, int* returnSize)
 {
     static int result[2];
@@ -20,6 +20,12 @@ int* twoSum (int* nums, int numsSize, int target, int* returnSize)
     }
     *returnSize = 0;
     return NULL;
+}
+
+// Using Hashing to find two sum
+int* twoSum2(int* nums, int numsSize, int target, int* returnSize)
+{
+    
 }
 int main()
 {
