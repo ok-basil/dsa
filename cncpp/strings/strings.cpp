@@ -1,8 +1,19 @@
 #include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main() {
     char temp = 'A';
 
-    printf("%c\n", temp);
-    printf("%d\n", temp);
+    char name[10];
+
+    printf("Enter your name: ");
+    // scanf("%s", name);
+    gets(name);
+
+    printf("Hello %s\n", name);
+
+    // printf("%c\n", temp);
+    // cout<<temp<<endl;
+    // printf("%d\n", temp);
 }
